@@ -6,9 +6,9 @@ import org.json.simple.parser.JSONParser;
 
 public class Main {
     public static void main(String[] args) {
-        //String strJson = jsonParser.getJSONFromFile("C:/Users/xxx/Desktop/myjson.json");
+        //String strJson = jsonParser.getJSONFromFile("C:/Users/xxx/Desktop/json_z_pulpitu.json");
         System.out.println();
-        String strJson = jsonReader.getJSONFromURL("https://raw.githubusercontent.com/asztam/mobile_technologies/main/myUrlJson.json");
+        String strJson = jsonReader.getJSONFromURL("https://raw.githubusercontent.com/asztam/mobile_technologies/json_reader/json_z_internetu.json");
         System.out.println("******Showing the raw json form the source******");
         System.out.println();
         System.out.println(strJson);
