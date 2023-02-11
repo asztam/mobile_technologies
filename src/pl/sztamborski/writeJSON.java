@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class writeJSON {
-
     public static void writeJson() {
         List<JSONObject> objectJson = new ArrayList<>();
 //        Set<JSONObject> employeesJson = new HashSet<>();
