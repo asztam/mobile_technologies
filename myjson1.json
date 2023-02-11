@@ -17,12 +17,12 @@
             "type": "fax",
             "number": "646 555-4567" 
         }
-    ] 
-}
+    ], 
 
 
 
-{
+
+
     "firstName": "Józef",
     "lastName": "Smith",
     "age": 25,
