@@ -1,0 +1,42 @@
+{
+    "firstName": "Zbigniew",
+    "lastName": "Zpulpitu",
+    "age": 24,
+    "address": {
+        "streetAddress": "ul. Piotrkowska",
+        "city": "Lodz",
+        "state": "Lodzkie",
+        "postalCode": 11111
+    },
+    "phoneNumbers": [
+        {
+            "type": "domowy",
+            "number": "123 456 789"
+        },
+        {
+            "type": "fax",
+            "number": "987 654 321" 
+        }
+    ], 
+
+
+    "firstName": "Józef",
+    "lastName": "Lokalny",
+    "age": 28,
+    "address": {
+        "streetAddress": "Zgierska",
+        "city": "Lodz",
+        "state": "Lodzkie",
+        "postalCode": 22222
+    },
+    "phoneNumbers": [
+        {
+            "type": "domowy",
+            "number": "111 222 333"
+        },
+        {
+            "type": "fax",
+            "number": "333 222 111" 
+        }
+    ] 
+}
