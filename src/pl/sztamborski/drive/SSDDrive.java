@@ -6,7 +6,7 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
-public class SSDDrive implements Drive{ //druga klasa implementujaca interfejs Drive
+public class SSDDrive implements Drive{
 
     private Map<String, File> files = new HashMap<>();
 

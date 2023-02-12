@@ -6,22 +6,18 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-public class HDDDrive implements Drive{ //klasa ta implementuje interfejs
+public class HDDDrive implements Drive{
     private List<File> files = new ArrayList<>();
-
-
-    @Override //przesłanianie danej metody
+    @Override
     public void addFile(File file) {
         files.add(file);
     }
-
     @Override
     public void listFiles() {
         for (File file : files) {
             System.out.println(file.getName());
         }
     }
-
     @Override
     public File findFile(String name) {
         Optional<File> foundFile = files.stream()

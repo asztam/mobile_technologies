@@ -37,23 +37,28 @@ public class  Main {
         //System.out.println("the size is: " + localDriveC.findFile("nazwa1.mp3").getSize());
 
 
+        System.out.println("\n*****Is gif1 object an instance of GIFImageFile class?*****");
         System.out.println(gif1 instanceof GIFImageFile);
-        List<File> files = new ArrayList<>(); //lista obiektow typu file
+
+        List<File> files = new ArrayList<>();
         files.add(jpg1);
         files.add(gif1);
         files.add(mp3file1);
-        for (File file : files){ //for each - przechodzi przez kazdy plik (obiekt) w liscie
-            System.out.println("To jest plik: ");
-            if (file instanceof GIFImageFile) { //patrzy czy obecnie sprawdzany obiekt jest typem danej klasy
-                System.out.println("gif w wersji " + file.getVersion());
+
+        System.out.println("\n*****SPAWDZANIE TYPÓW PLIKÓW*****");
+        for (File file : files){
+            System.out.println("To jest plik: " + file.getName());
+            if (file instanceof GIFImageFile) {
+                System.out.println("typu gif w wersji " + file.getVersion());
             }
             if (file instanceof JPGImageFile) {
-                System.out.println("jpg w wersji " + file.getVersion());
+                System.out.println("typu jpg w wersji " + file.getVersion());
             }
             if (file instanceof MP3MusicFile) {
-                System.out.println("mp3");
+                System.out.println("typu mp3");
             }
         }
+        System.out.println("\n*****Getter maks rozdzielczości wertykalnej monitora*****");
         System.out.println("Your monitor max vertical resolution is " + Monitor.getMaxHeight() +" pixels.");
 
         System.out.println();
@@ -61,8 +66,21 @@ public class  Main {
         MemoryStick adata_pendrive = new MemoryStick("ADATA Pendrive");
         Headphones jbl_headphones = new Headphones("JBL headphones");
         Monitor monitor = new Monitor();
+        System.out.println("\n*****DOMYŚLNA RODZIELCZOŚĆ*****");
+        System.out.println(monitor.getResolution());
         monitor.setLowResolution();
-        monitor.getResolution();
+        System.out.println("\n*****USTAWIONA LOW RESOLUTION*****");
+        System.out.println(monitor.getResolution());
+
+
+        System.out.println("\n*****PODŁĄCZANIE PENDIRVE'A*****");
+        adata_pendrive.connect();
+        System.out.println("\n*****PRÓBA ODŁĄCZENIA*****");
+        adata_pendrive.disconnect();
+        System.out.println("\n*****EJECT*****");
+        adata_pendrive.eject();
+        System.out.println("\n*****PRÓBA ODŁĄCZENIA*****");
+        adata_pendrive.disconnect();
 
 
 
